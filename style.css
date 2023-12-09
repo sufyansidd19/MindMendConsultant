@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: rgb(255, 255, 255);
@@ -353,12 +357,21 @@ nav {
   padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
-  background-color: rgb(110, 186, 112);
+  /* background-color: rgb(2, 17, 3); */
+  /* background-image: url(./images/Doc1.webp); */
+  /* background-position: absolute; */
+  background-position-y: top;
+  /* background-size: -100px -100px -100px -100px; */
   border: 2px solid black;
   border-radius: 10px;
   transition: 0.3s;
 }
-
+.dacsaab{
+  left: 0;
+  /* position: absolute; */
+  /* left: 0; */
+  /* top: 0; */
+}
 .price_card:hover {
   background-color: rgb(143, 161, 172);
   border-color: green;
@@ -485,6 +498,70 @@ nav {
   cursor: pointer;
 }
 
+/* Modal */
+.btn-login{
+  padding: 10px 15px;
+  background-color:black ;
+  color: white;
+  cursor: pointer;
+}
+.overlay{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0 , 0 , 0 , 0.5);
+  position: fixed;
+  top: 0%;
+  /* z index to adjust behind  */
+  z-index: -1;
+  opacity: 0;
+   /* opacity for transparencing overlay  */
+   transition: .6s;
+}
+.showoverlay{
+  opacity: 1;
+  z-index: 1;
+}
+.loginform{
+  background: white;
+  width: 350px;
+  padding: 30px 20px;
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  /* we have to set top:+50%; in order to render loginform */
+  top: -50%;
+  /* translate 1st argument width 2nd argument height */
+  transform: translate(-50%,-50%);
+  box-shadow: 0px 0px 10px 3px #ccc;
+  transition: 1s;
+}
+.showloginform{
+  top: 50%;
+}
+.loginform input{
+  width: 100%;
+  height: 35px;
+  margin-bottom: 15px;
+}
+.loginform button{
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.loginform span{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: white;
+  height: 30px;
+  width: 30px;
+  background-color: green;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+/* Modal closed */
 footer {
   display: flex;
   flex-wrap: wrap;
