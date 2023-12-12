@@ -1,0 +1,38 @@
+*{
+    margin: 5;
+    padding: 5;
+}
+.side-box{
+    width: 20%;
+    height: 670px;
+    border: 1px solid;
+}
+.middle-box{
+    width: 50%;
+    height: 200px;
+    border: 1px solid;
+    display: flex;
+    margin-left: 10px;
+}
+.wow{
+    display: flex;
+}
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 35px;
+    background: #088178;
+  }
+  
+  .card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+  }

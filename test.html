@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 100px; /* Adjust the width as needed */
+      height: 100%; /* Takes full height of the container */
+      background-color: #f0f0f0; /* Sidebar background color */
+    }
+
+    .content {
+      flex: 1; /* Takes remaining width */
+      min-height: 200px; /* Adjust the height as needed */
+      background-color: #e0e0e0; /* Content area background color */
+      padding: 20px; /* Add padding for spacing */
+      box-sizing: border-box; /* Include padding in the element's total width and height */
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .profile img {
+      width: 50px; /* Adjust the image width as needed */
+      height: 50px; /* Adjust the image height as needed */
+      border-radius: 50%; /* Make the image round */
+      margin-right: 10px; /* Add margin for spacing */
+    }
+
+    .profile-info {
+      flex: 1; /* Takes the remaining space */
+    }
+
+    .price {
+      margin-top: 10px; /* Add margin for spacing */
+    }
+
+    .book-button {
+      margin-top: 10px; /* Add margin for spacing */
+      padding: 10px; /* Add padding for styling */
+      background-color: #4caf50; /* Button background color */
+      color: #fff; /* Button text color */
+      border: none; /* Remove button border */
+      cursor: pointer; /* Add cursor pointer on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <!-- Sidebar content goes here -->
+      Sidebar Content
+    </div>
+    <div class="content">
+      <!-- Content area content goes here -->
+      <div class="profile">
+        <img src="your-photo.jpg" alt="Profile Photo">
+        <div class="profile-info">
+          <div>Name</div>
+          <div class="price">Price: $19.99</div>
+        </div>
+      </div>
+      <button class="book-button">Book</button>
+    </div>
+  </div>
+</body>
+</html>
