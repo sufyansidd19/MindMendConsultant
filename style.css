@@ -1,7 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: rgb(255, 255, 255);
@@ -97,7 +98,6 @@ nav {
 
 .nav-logo {
   max-width: 170px;
-
 }
 
 .nav-link {
@@ -131,7 +131,7 @@ nav {
 .header_container {
   box-shadow: 3px 3px 5px 5px rgba(182, 241, 180, 0.9);
   /* ye baqi hai */
-  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
   position: relative;
   margin-top: 1rem;
   padding-top: 2rem;
@@ -357,7 +357,7 @@ nav {
   padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
-  /* background-color: rgb(2, 17, 3); */
+  background-color: rgb(48, 138, 54);
   /* background-image: url(./images/Doc1.webp); */
   /* background-position: absolute; */
   background-position-y: top;
@@ -366,12 +366,7 @@ nav {
   border-radius: 10px;
   transition: 0.3s;
 }
-.dacsaab{
-  left: 0;
-  /* position: absolute; */
-  /* left: 0; */
-  /* top: 0; */
-}
+
 .price_card:hover {
   background-color: rgb(143, 161, 172);
   border-color: green;
@@ -387,7 +382,7 @@ nav {
   margin-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 500;
-  color:black;
+  color: black;
 }
 
 .price_card h3 {
@@ -499,29 +494,32 @@ nav {
 }
 
 /* Modal */
-.btn-login{
+.btn-login {
   padding: 10px 15px;
-  background-color:black ;
+  background-color: black;
   color: white;
   cursor: pointer;
 }
-.overlay{
+
+.overlay {
   width: 100%;
   height: 100vh;
-  background-color: rgba(0 , 0 , 0 , 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0%;
   /* z index to adjust behind  */
   z-index: -1;
   opacity: 0;
-   /* opacity for transparencing overlay  */
-   transition: .6s;
+  /* opacity for transparencing overlay  */
+  transition: .6s;
 }
-.showoverlay{
+
+.showoverlay {
   opacity: 1;
   z-index: 1;
 }
-.loginform{
+
+.loginform {
   background: white;
   width: 350px;
   padding: 30px 20px;
@@ -531,25 +529,29 @@ nav {
   /* we have to set top:+50%; in order to render loginform */
   top: -50%;
   /* translate 1st argument width 2nd argument height */
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   box-shadow: 0px 0px 10px 3px #ccc;
   transition: 1s;
 }
-.showloginform{
+
+.showloginform {
   top: 50%;
 }
-.loginform input{
+
+.loginform input {
   width: 100%;
   height: 35px;
   margin-bottom: 15px;
 }
-.loginform button{
+
+.loginform button {
   background-color: black;
   color: white;
   padding: 10px 15px;
   cursor: pointer;
 }
-.loginform span{
+
+.loginform span {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -561,7 +563,10 @@ nav {
   line-height: 30px;
   cursor: pointer;
 }
+
 /* Modal closed */
+
+
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -695,4 +700,178 @@ footer .copyright {
   .footer_bar {
     text-align: center;
   }
+}
+
+/* Contact form */
+.contact h2 {
+  margin-bottom: 2rem;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+form input,
+textarea {
+  width: 100%;
+  padding: 1.3rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: rgb(12, 11, 11);
+  background: rgb(216, 210, 210);
+  border-radius: .8rem;
+  gap: 2.5rem;
+  margin: .7rem 0;
+}
+
+.sticky {
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+form input {
+  width: 49%;
+}
+
+textarea {
+  resize: none;
+}
+
+form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+  width: 20%;
+  color: #000;
+}
+
+.allheading {
+  text-align: center;
+  font-size: 4.5rem;
+  color: rgb(35, 162, 31)
+}
+
+.sec-c {
+  min-height: 100vh;
+  padding: 4rem 9% 2rem;
+}
+
+
+/* Doctor info */
+#details {
+  display: flex;
+  margin-top: 20px;
+}
+
+#details .big-img {
+  width: 40%;
+  margin-right: 50px;
+}
+
+.sec-p1 {
+  padding: 40px 80px;
+}
+
+#details #product-detail {
+  width: 50%;
+}
+
+#details #product-detail h3 {
+  padding: 40px 0 20px 0;
+  font-size: 27px;
+}
+
+/* #details #product-detail input{
+  width: 50px;
+  height: 43px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+} */
+/* #details #product-detail input:focus{
+  outline: none;
+} */
+#details #product-detail button {
+  background-color: #088178;
+  color: azure;
+  height: 45px;
+  width: 100px;
+
+}
+
+#details #product-detail span {
+  line-height: 25px;
+}
+
+
+/* doctor slider main page */
+.card {
+  border-radius: 50%;
+}
+
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  padding: 3px;
+  margin-left: 45px;
+  background: #088178;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  display: flex;
+  justify-content: center;
+}
+
+/* https: //cdn.shopify.com/s/files/1/0446/9369/files/nacon_logo_585121da-0f4c-4a44-a5fd-94a20b3240dd.jpg?v=1618404515 */
+
+/* long banner */
+/* #sale1 {
+  background-image: url(./images/brain4.webp);
+  width: 100%;
+  height: 40vh;
+  border: 1px solid;
+  border-radius: 50px;
+  background-size: cover;
+  /* background-position: center; */
+  /* object-fit: cover;
+  display: flex; */
+  /* flex-direction: column; */
+  /* align-items: flex-end; */
+  /* text-align: bottom; */
+  /* justify-content: center;
+  color: whitesmoke; */
+ 
+#sale1{
+  width: 100%;
+  height: 35vh;
+}
+#sale1 img{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Therapist */
+.formating{
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  width: 90%;
+  border: 1px solid;
 }
