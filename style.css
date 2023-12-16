@@ -365,6 +365,7 @@ nav {
   border: 2px solid black;
   border-radius: 10px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .price_card:hover {
