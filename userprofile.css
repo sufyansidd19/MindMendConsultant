@@ -6,8 +6,8 @@
     display: flex;
 }
 .side-box{
-    /* position: fixed; */
-    /* overflow-y: auto; */
+    /* position: fixed;
+    overflow-y: auto; */
     margin-left: 5px;
     width: 20%;
     box-shadow: 3px 3px 5px 5px rgba(222, 226, 222, 0.9);

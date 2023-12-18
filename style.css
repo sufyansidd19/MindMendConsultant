@@ -97,14 +97,14 @@ nav {
 }
 
 .nav-logo {
-  max-width: 170px;
+  width: 100px;
 }
 
 .nav-link {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.6rem;
+  gap: 3.2rem;
 }
 
 .link a {
@@ -133,6 +133,8 @@ nav {
   /* ye baqi hai */
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
   position: relative;
+  margin-left: 10px;
+  padding-left: 40px;
   margin-top: 1rem;
   padding-top: 2rem;
   display: grid;
@@ -143,7 +145,7 @@ nav {
 }
 
 .header_container::before {
-  content: "health";
+  /* content: "health"; */
   position: absolute;
   bottom: 5rem;
   right: 20rem;
