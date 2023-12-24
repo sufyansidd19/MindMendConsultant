@@ -20,7 +20,7 @@ body {
 }
 
 .sec_container {
-  max-width: 1200px;
+  max-width: 1140px;
   padding: 2rem 1rem;
   margin: auto;
 }
@@ -132,6 +132,7 @@ nav {
 }
 
 .header_container {
+  background-color: #D1FFBD;
   box-shadow: 3px 3px 5px 5px rgba(182, 241, 180, 0.9);
   /* ye baqi hai */
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
@@ -211,7 +212,7 @@ nav {
 }
 
 .header_image img {
-  max-width: 350px;
+  max-width: 1000px;
   margin: auto;
 }
 
