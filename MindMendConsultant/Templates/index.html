@@ -5,16 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MindMend</title>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  {% load static %}
+  <link rel="stylesheet" href="{%static 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css'%}"/>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="{% static 'style.css'%}">
 </head>
 
 <body>
   <!-- Navbar -->
   <nav>
     <div class="nav-logo">
-      <a href="#"><img src="./images/clinic.png"></a>
+      <a href="#"><img src="/medium/images/clinic.png"></a>
     </div>
     <ul class="nav-link">
       <li class="link"><a href="#">Home</li>
@@ -56,7 +58,7 @@
       <button class="btn"><a href="./service.html">Book Now</a></button>
     </div>
     <div class="header_image">
-      <img src="./images/mentalcover.png" alt="header">
+      <img src="./media/mentalcover.png" alt="header">
     </div>
   </header><br><br><br>
   <!-- Header cover photo close -->
@@ -203,7 +205,7 @@
       continuously improve, innovate, and excel, making us the ultimate choice for your healthcare needs.
 
     </p>
-    <div class="join_images">
+    {% comment %} <div class="join_images">
       <img src="images/clinic-D.jpg" alt="">
       <div class="join_grid">
 
@@ -232,7 +234,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> {% endcomment %}
   </section>
   <br><hr>
 
@@ -338,6 +340,6 @@
   </footer>
 
 </body>
-<script src="app.js"></script>
+<script src="{%static 'app.js'%}"></script>
 
 </html>
