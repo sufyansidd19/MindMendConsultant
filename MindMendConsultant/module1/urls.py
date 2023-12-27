@@ -1,6 +1,8 @@
 from django.urls import path
-from module1 import views
+from . import views
 
 urlpatterns = [
-    path('',views.index,name='index'),
+    path('', views.index, name='index'),
+    path('sessions', views.sessions, name='sessions'),
+    path('logged_in', views.login_view, name='login_view'),
 ]
