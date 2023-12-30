@@ -33,6 +33,9 @@ def report_gen(request):
 def Booking(request):
     return render(request, 'Book.html')
 
+def auth(request):
+    return render(request,"auth.html")
+
 
 def login_view(request):
     if request.method == 'POST':
