@@ -26,13 +26,13 @@ Mind Mend Consultant is a web-based platform designed to connect patients with c
 
 ## 🖼 Screenshots
 **Main Page**  
-![Main Page](images/main_page.png)  
+![Main Page](images/main_page.jpg)  
 
 **User Profile**  
-![Profile Page](images/profile_page.png)  
+![Profile Page](images/profile_page.jpg)  
 
 **Signup Page**  
-![Signup Page](images/signup_page.png)  
+![Signup Page](images/signup_page.jpg)  
 
 ## 🛠 Tech Stack
 - **Frontend:** HTML, CSS, JavaScript 
