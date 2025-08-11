@@ -25,13 +25,13 @@ Mind Mend Consultant is a web-based platform designed to connect patients with c
 - Generates therapy session recommendations based on ongoing health condition.
 
 ## 🖼 Screenshots
-**Main Page**  
+## Main Page  
 ![Main Page](main_page.jpg)  
 
-**User Profile**  
+## User Profile  
 ![Profile Page](profile_page.jpg)  
 
-**Signup Page**  
+## Signup Page  
 ![Signup Page](signup_page.jpg)  
 
 ## 🛠 Tech Stack
